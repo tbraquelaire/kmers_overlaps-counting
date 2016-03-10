@@ -1,4 +1,4 @@
-PROGRAMS=create_bin create_bin2_multiplex_kmers create_bin2_aleatmult_kmers create_bin2_simple_kmers naive_method read_bin sort_bin merge_bin merge_bin_tree merge_bin_parallel count_overlaps count_overlaps2 search_kmer_overlaps get_stats_overlaps
+PROGRAMS=create_bin create_bin2_multiplex_kmers create_bin2_aleatmult_kmers create_bin2_simple_kmers naive_method read_bin sort_bin merge_bin merge_bin_tree merge_bin_parallel count_overlaps count_overlaps2 search_kmer_overlaps search_simple_kmer_overlaps get_stats_overlaps
 TESTS=
 
 CPPFLAGS=-g -O0 -Wall -Werror -std=c99
@@ -21,6 +21,7 @@ merge_bin_parallel: merge_bin_parallel.o
 count_overlaps: count_overlaps.o
 count_overlaps2: count_overlaps2.o
 search_kmer_overlaps: search_kmer_overlaps.o
+search_simple_kmer_overlaps: search_simple_kmer_overlaps.o
 get_stats_overlaps: get_stats_overlaps.o
 
 libcountoverlaps.a: libcountoverlaps()

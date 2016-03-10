@@ -12,6 +12,18 @@
 
 //char kmer[KMER_SIZE+1];
 //char kmer2[KMER_SIZE+1];
+
+//TODO
+/*
+** update bit vectors
+** simple bit_vectors only need :
+** 
+** 3 bits for counting overlaps (0-4)
+** 2 bits for the letter (first or last, depending on pos)
+** 1 for pos
+** 58 for the kmer (max size = 29)
+*/
+
 void usage(){
 	fprintf(stderr, "require an input (FASTA), kmer size and an output\n");
 }
